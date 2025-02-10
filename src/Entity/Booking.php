@@ -5,8 +5,10 @@ namespace App\Entity;
 use App\Repository\BookingRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
+use ApiPlatform\Metadata\ApiResource;
 
 #[ORM\Entity(repositoryClass: BookingRepository::class)]
+#[ApiResource]
 class Booking
 {
     #[ORM\Id]
