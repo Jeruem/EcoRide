@@ -44,7 +44,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     private ?int $credit = null;
 
     #[ORM\Column]
-    private ?bool $isDriver = null;
+
+    private bool $isDriver = false;
+
 
     /**
      * @var Collection<int, Ride>

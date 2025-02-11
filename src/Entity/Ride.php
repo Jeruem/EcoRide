@@ -24,7 +24,7 @@ class Ride
 
     #[ORM\ManyToOne(inversedBy: 'rides')]
     #[ORM\JoinColumn(nullable: false)]
-    private ?car $car = null;
+    private ?Car $car = null;
 
     #[ORM\Column(length: 255)]
     private ?string $departure = null;
